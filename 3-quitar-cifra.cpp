@@ -1,10 +1,10 @@
-﻿/*
+﻿/*******************************************************************************
  * Autores: Javier Martínez y Miguel Ángel Latre
- * Última revisión: 19-10-2020
+ * Última revisión: 15-10-2021
  * Resumen: Función que quita una determinada cifra de un número y programa de
  *          prueba de la misma.
- *          Tema 6 (enteros). Programación 1
- */
+ *          Problemas del tema 6 (enteros). Programación 1
+ ******************************************************************************/
 #include <iostream>
 using namespace std;
 
