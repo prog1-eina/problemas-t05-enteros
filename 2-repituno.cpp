@@ -13,9 +13,9 @@ using namespace std;
  * Post: Si «n» es un número repituno, ha devuelto el orden del mismo.
  *       En caso contrario, ha devuelto -1.
  */
-int ordenRepituno(unsigned int n) {
+int ordenRepituno(unsigned n) {
     bool esRepituno = true;
-    unsigned int orden = 0;
+    unsigned orden = 0;
     while (n != 0 && esRepituno) {
         esRepituno = (n % 10 == 1);
         orden++;

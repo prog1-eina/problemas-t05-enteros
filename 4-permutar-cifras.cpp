@@ -21,17 +21,17 @@ using namespace std;
  *           permutarCifras(10407) = 14070
  *           permutarCifras(104073) = 10437
  */
-unsigned int permutarCifras(unsigned int n) {
-    unsigned int resultado = 0;
-    unsigned int pot100 = 1;
+unsigned permutarCifras(unsigned n) {
+    unsigned resultado = 0;
+    unsigned potencia100 = 1;
     while (n >= 10) {
-        unsigned int cifraPosImpar = n % 10;
-        unsigned int cifraPar = (n % 100) / 10;
-        resultado += 10 * pot100 * cifraPosImpar + pot100 * cifraPar;
-        pot100 = 100 * pot100;
+        unsigned cifraPosImpar = n % 10;
+        unsigned cifraPosPar = (n % 100) / 10;
+        resultado += 10 * potencia100 * cifraPosImpar + potencia100 * cifraPosPar;
+        potencia100 = 100 * potencia100;
         n = n / 100;
     }
-    return resultado + pot100 * n;
+    return resultado + potencia100 * n;
 }
 
 /*
