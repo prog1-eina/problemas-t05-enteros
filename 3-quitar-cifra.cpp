@@ -1,15 +1,15 @@
-﻿/*
+﻿/*******************************************************************************
  * Autores: Javier Martínez y Miguel Ángel Latre
- * Última revisión: 19-10-2020
+ * Última revisión: 15-10-2021
  * Resumen: Función que quita una determinada cifra de un número y programa de
  *          prueba de la misma.
- *          Tema 6 (enteros). Programación 1
- */
+ *          Problemas del tema 6 (enteros). Programación 1
+ ******************************************************************************/
 #include <iostream>
 using namespace std;
 
 /*
- * Pre:  n ≥ 0 y 0 ≤ c ≤ 9
+ * Pre:  0 ≤ c ≤ 9
  * Post: Ha devuelto un entero que, escrito en base 10, equivale
  *       al resultado de suprimir todas las ocurrencias de la
  *       cifra «c» en el entero «n» cuando se escribe en base 10.
@@ -20,13 +20,13 @@ using namespace std;
  *           quitarCifra(902037122, 4) = 902037122
  *           quitarCifra(902037122, 9) = 2037122
  */
-int quitarCifra(int n, int c) {
-    int resultado = 0;
-    int pot10 = 1;
+unsigned quitarCifra(unsigned n, unsigned c) {
+    unsigned resultado = 0;
+    unsigned potencia10 = 1;
     while (n != 0) {
         if (n % 10 != c) {
-            resultado = resultado + (n % 10) * pot10;
-            pot10 = 10 * pot10;
+            resultado = resultado + (n % 10) * potencia10;
+            potencia10 = 10 * potencia10;
         }
         n = n / 10;
     }

@@ -1,10 +1,10 @@
-﻿/*
+﻿/*******************************************************************************
  * Autores: Javier Martínez y Miguel Ángel Latre
- * Última revisión: 19-10-2020
+ * Última revisión: 15-10-2021
  * Resumen: Función que calcula el orden de un número repituno y programa de
  *          prueba de la misma.
- *          Tema 6 (enteros). Programación 1
- */
+ *          Problemas del tema 6 (enteros). Programación 1
+ ******************************************************************************/
 #include <iostream>
 using namespace std;
 
@@ -13,9 +13,9 @@ using namespace std;
  * Post: Si «n» es un número repituno, ha devuelto el orden del mismo.
  *       En caso contrario, ha devuelto -1.
  */
-int ordenRepituno(unsigned int n) {
+int ordenRepituno(unsigned n) {
     bool esRepituno = true;
-    unsigned int orden = 0;
+    unsigned orden = 0;
     while (n != 0 && esRepituno) {
         esRepituno = (n % 10 == 1);
         orden++;
