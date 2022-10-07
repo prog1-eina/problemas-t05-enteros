@@ -3,7 +3,7 @@
  * Última revisión: 15-10-2021
  * Resumen: Función que quita una determinada cifra de un número y programa de
  *          prueba de la misma.
- *          Problemas del tema 6 (enteros). Programación 1
+ *          Problemas del tema 5 (enteros). Programación 1
  ******************************************************************************/
 #include <iostream>
 using namespace std;
@@ -47,5 +47,4 @@ int main() {
     cout << quitarCifra(9, 9) << " = 0" << endl;
     cout << quitarCifra(9, 2) << " = 9" << endl;
     cout << quitarCifra(0, 2) << " = 0" << endl;
-    return 0;
 }

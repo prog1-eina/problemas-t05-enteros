@@ -3,7 +3,7 @@
  * Última revisión: 15-10-2021
  * Resumen: Función que permuta las cifras de un número y programa de
  *          prueba de la misma.
- *          Problemas del tema 6 (enteros). Programación 1
+ *          Problemas del tema 5 (enteros). Programación 1
  ******************************************************************************/
 #include <iostream>
 using namespace std;
@@ -48,5 +48,4 @@ int main() {
     cout << permutarCifras(35) << " = 53" << endl;
     cout << permutarCifras(8) << " = 8" << endl;
     cout << permutarCifras(0) << " = 0" << endl;
-    return 0;
 }

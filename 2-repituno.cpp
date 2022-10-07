@@ -3,7 +3,7 @@
  * Última revisión: 15-10-2021
  * Resumen: Función que calcula el orden de un número repituno y programa de
  *          prueba de la misma.
- *          Problemas del tema 6 (enteros). Programación 1
+ *          Problemas del tema 5 (enteros). Programación 1
  ******************************************************************************/
 #include <iostream>
 using namespace std;
@@ -43,5 +43,4 @@ int main() {
     cout << ordenRepituno(110111) << " = -1" << endl;
     cout << ordenRepituno(211111) << " = -1" << endl;
     cout << ordenRepituno(111113) << " = -1" << endl;
-    return 0;
 }
