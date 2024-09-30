@@ -10,8 +10,8 @@ using namespace std;
 
 /*
  * Pre:  ---
- * Post: Si «n» es un número repituno, ha devuelto el orden del mismo.
- *       En caso contrario, ha devuelto -1.
+ * Post: Si «n» es un número repituno, devuelve el orden del mismo.
+ *       En caso contrario, devuelve -1.
  */
 int ordenRepituno(unsigned n) {
     bool esRepituno = n > 0;
@@ -32,7 +32,7 @@ int ordenRepituno(unsigned n) {
 
 /*
  * Programa que solicita al usuario un número entero y, si es un número repituno, escribe en la
- * pantalla el su orden. En caso contrario, indica que el número introducido no es repituno.
+ * pantalla su orden. En caso contrario, indica que el número introducido no es repituno.
  */
 int main() {
     // Petición y lectura del número
@@ -44,9 +44,10 @@ int main() {
     int orden = ordenRepituno(numero);
 
     // Discriminación y escritura del resultado
-    if (orden >= 0) {
+    if (numero >= 0 && orden >= 0) {
         cout << numero << " es repituno y su orden es " << orden << "." << endl;
     } else {
         cout << numero << " no es repituno." << endl;
     }
+    return 0;
 }

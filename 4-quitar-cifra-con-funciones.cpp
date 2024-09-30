@@ -10,10 +10,10 @@
 using namespace std;
 
 /*
- * Pre:  0 ≤ c ≤ 9
- * Post: Ha devuelto un entero que, escrito en base 10, equivale
+ * Pre:  0 ≤ cifra ≤ 9
+ * Post: Devuelve un entero que, escrito en base 10, equivale
  *       al resultado de suprimir todas las ocurrencias de la
- *       cifra «c» en el entero «n» cuando se escribe en base 10.
+ *       cifra «cifra» en el entero «numero» cuando se escribe en base 10.
  *       Ejemplos:
  *           quitarCifra(902037122, 0) = 9237122
  *           quitarCifra(902037122, 1) = 90203722
@@ -21,15 +21,15 @@ using namespace std;
  *           quitarCifra(902037122, 4) = 902037122
  *           quitarCifra(902037122, 9) = 2037122
  */
-unsigned quitarCifra(unsigned n, unsigned c) {
+unsigned quitarCifra(unsigned numero, unsigned cifra) {
     unsigned resultado = 0;
     unsigned potencia10 = 1;
-    while (n != 0) {
-        if (n % 10 != c) {
-            resultado = resultado + (n % 10) * potencia10;
+    while (numero != 0) {
+        if (numero % 10 != cifra) {
+            resultado = resultado + (numero % 10) * potencia10;
             potencia10 = 10 * potencia10;
         }
-        n = n / 10;
+        numero = numero / 10;
     }
     return resultado;
 }
