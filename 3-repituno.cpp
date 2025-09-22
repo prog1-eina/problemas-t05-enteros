@@ -1,17 +1,18 @@
-﻿/*********************************************************************************************\
+﻿/******************************************************************************
  * Autores: Miguel Ángel Latre
  * Última revisión: 25-9-2023
- * Resumen: Programa que solicita al usuario un número entero y, si es un número repituno,
- *          escribe en la pantalla el su orden. En caso contrario, indica que el número
- *          introducido no es repituno.
+ * Resumen: Programa que solicita al usuario un número entero y, si es un
+ *          número repituno, escribe en la pantalla el su orden. En caso
+ *          contrario, indica que el número introducido no es repituno.
  *          Problemas del tema 5 (enteros). Programación 1
-\*********************************************************************************************/
+ *****************************************************************************/
 #include <iostream>
 using namespace std;
 
 /*
- * Programa que solicita al usuario un número entero y, si es un número repituno, escribe en la
- * pantalla el su orden. En caso contrario, indica que el número introducido no es repituno.
+ * Programa que solicita al usuario un número entero y, si es un número
+ * repituno, escribe en la pantalla su orden. En caso contrario, indica que
+ * el número introducido no es repituno.
  */
 int main() {
     // Petición y lectura del número
@@ -23,7 +24,8 @@ int main() {
     int n = numero;
     bool esRepituno = (n > 0);
     unsigned orden = 0;
-    // Esquema de la solución planteada: Búsqueda de un dígito en n que sea distinto de 1
+    // Esquema de la solución planteada: Búsqueda de un dígito en n que sea
+    // distinto de 1
     // Si se encuentra uno distinto de 1 → no es repituno
     // Si no se encuentra ninguno distinto de 1 → es repituno
     while (n != 0 && esRepituno) {
@@ -36,7 +38,8 @@ int main() {
 
     // Discriminación y escritura del resultado
     if (esRepituno) {
-        cout << numero << " es repituno y su orden es " << orden << "." << endl;
+        cout << numero << " es repituno y su orden es " << orden << "."
+             << endl;
     } else {
         cout << numero << " no es repituno." << endl;
     }

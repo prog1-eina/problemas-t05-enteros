@@ -1,10 +1,10 @@
-﻿/*******************************************************************************
+﻿/******************************************************************************
  * Autores: Javier Martínez y Miguel Ángel Latre
  * Última revisión: 15-10-2021
  * Resumen: Función que calcula el orden de un número repituno y programa de
  *          prueba de la misma.
  *          Problemas del tema 5 (enteros). Programación 1
- ******************************************************************************/
+ *****************************************************************************/
 #include <iostream>
 using namespace std;
 
@@ -31,8 +31,9 @@ int ordenRepituno(unsigned n) {
 
 
 /*
- * Programa que solicita al usuario un número entero y, si es un número repituno, escribe en la
- * pantalla su orden. En caso contrario, indica que el número introducido no es repituno.
+ * Programa que solicita al usuario un número entero y, si es un número
+ * repituno, escribe en la pantalla su orden. En caso contrario, indica que
+ * el número introducido no es repituno.
  */
 int main() {
     // Petición y lectura del número
@@ -45,7 +46,8 @@ int main() {
 
     // Discriminación y escritura del resultado
     if (numero >= 0 && orden >= 0) {
-        cout << numero << " es repituno y su orden es " << orden << "." << endl;
+        cout << numero << " es repituno y su orden es " << orden << "."
+             << endl;
     } else {
         cout << numero << " no es repituno." << endl;
     }
