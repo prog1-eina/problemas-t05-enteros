@@ -1,6 +1,5 @@
 ﻿/******************************************************************************
  * Autores: Javier Martínez y Miguel Ángel Latre
- * Última revisión: 25-9-2023
  * Resumen: Programa que solicita al usuario un número natural y escribe en la
  *          pantalla los números resultantes de suprimir todas las ocurrencias
  *          de cada una de las cifras del 0 al 9 en el número escrito por el

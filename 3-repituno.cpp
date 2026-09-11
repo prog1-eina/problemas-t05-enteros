@@ -1,6 +1,5 @@
 ﻿/******************************************************************************
  * Autores: Miguel Ángel Latre
- * Última revisión: 25-9-2023
  * Resumen: Programa que solicita al usuario un número entero y, si es un
  *          número repituno, escribe en la pantalla el su orden. En caso
  *          contrario, indica que el número introducido no es repituno.

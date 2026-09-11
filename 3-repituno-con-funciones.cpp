@@ -1,6 +1,5 @@
 ﻿/******************************************************************************
  * Autores: Javier Martínez y Miguel Ángel Latre
- * Última revisión: 15-10-2021
  * Resumen: Función que calcula el orden de un número repituno y programa de
  *          prueba de la misma.
  *          Problemas del tema 5 (enteros). Programación 1
